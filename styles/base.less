@@ -1,4 +1,4 @@
-@import "syntax-variables";
+@import 'syntax-variables';
 
 atom-text-editor {
   background: @syntax-background;
@@ -35,79 +35,15 @@ atom-text-editor {
       background-color: rgba(0, 0, 0, .15);
     }
   }
-}
 
-atom-text-editor .search-results .marker .region {
-  background-color: transparent;
-  border: 1px solid @syntax-result-marker-color;
-}
-
-atom-text-editor .search-results .marker.current-result .region {
-  border: 1px solid @syntax-result-marker-color-selected;
-}
-
-atom-workspace {
-  .tree-view {
-    background: #0f1125;
-
-    .list-group li:not(.list-nested-item),
-    .list-tree li:not(.list-nested-item),
-    .list-group li.list-nested-item > .list-item,
-    .list-tree li.list-nested-item > .list-item {
-      color: #555382;
-    }
-
-    .selected {
-      color: #759deb !important;
-      &::before {
-        background: @color-primary-dark;
-      }
-    }
+  .search-results .marker .region {
+    background-color: transparent;
+    border: 1px solid @syntax-result-marker-color;
   }
 
-  .tab-bar {
-    // background: #0f1125;
+  .search-results .marker.current-result .region {
+    border: 1px solid @syntax-result-marker-color-selected;
   }
-
-  .settings-view .config-menu,
-  .settings-view > .panels {
-    background: #0f1125;
-  }
-
-  .settings-view .config-menu .nav > li {
-    > a:hover {
-      background: none;
-    }
-
-    &.active > a {
-      background: @color-primary-dark;
-      color: #759deb;
-    }
-  }
-
-  .settings-view {
-    a, a.icon {
-      color: #555382;
-
-      &::before {
-        position: relative;
-        top: 2px;
-        color: #555382;
-      }
-    }
-
-    .config-menu {
-      border-image: none;
-    }
-  }
-
-  .status-bar {
-    background: #0f1125;
-  }
-}
-
-atom-pane-container atom-pane {
-  border: 0 !important;
 }
 
 // Syntax styles
