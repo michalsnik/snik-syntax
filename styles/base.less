@@ -1,8 +1,10 @@
 @import 'syntax-variables';
 
 atom-text-editor {
-  background: @syntax-background;
-  color: @syntax-text-color;
+  &:not(.mini) {
+    background: @syntax-background;
+    color: @syntax-text-color;
+  }
 
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
