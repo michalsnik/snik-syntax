@@ -1,0 +1,3 @@
+# snik-syntax atom theme
+
+...
