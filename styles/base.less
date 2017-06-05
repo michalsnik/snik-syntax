@@ -38,6 +38,17 @@ atom-text-editor {
     }
   }
 
+  .indent-guide {
+    box-shadow: inset 1px 0 @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+    &.eol {
+      padding-left: 2px;
+    }
+  }
+
   .search-results .marker .region {
     background-color: transparent;
     border: 1px solid @syntax-result-marker-color;
